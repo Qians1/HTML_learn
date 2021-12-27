@@ -1,0 +1,156 @@
+<!--HTML基础-->
+
+<!--
+    HTMl是一种超文本标记语言Hyper Text Markup Language
+    HTML不是一种编程语言,而是一种标记语言(markup language)
+    标记语言是一套标记标签(markup tag)。
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--HTML标签，
+        整个网页都是从这里开始的，然后到</html>结束-->
+<head>
+    <!--head标签，
+        代表也页面的头，定义一些特殊内容，这些内容往往都是"不可见内容"(在浏览器内不可见)-->
+    
+        <!--
+            meta标签，定义网页的基本信息（供搜索引擎）
+        -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+            定义网页的标题
+        -->
+    
+    <title>Document</title>
+
+     <!--
+        <style></style>
+     定义CSS样式
+     -->
+
+     <!--
+     <link rel="stylesheet" href="">
+     链接外部CSS文件或者脚本文件
+     -->
+     
+     <!---
+     <script></script>
+     定义脚本语言
+     -->
+     
+     <!--
+     <base> </base>
+     定义页面所有链接的基础定位（用的很少）
+     -->
+
+</head>
+<body>
+    <!--body标签，
+        定义网页展示的内容，这些内容都是可以看见的内容（在浏览器可见）-->
+    
+        段落与文字标签
+    <!--
+        <h1> - <h6> header    标题
+        <p>         paragraph 段落
+        <br>        break     换行
+        <hr>        horizontal rule 水平线
+        <div>       divsion    分割（块元素）
+        <span>      span       区域（行内元素）
+
+    -->
+
+        文本格式化标签
+     <!--
+         <strong>    strong(加强)      加粗
+         <em>        emphasized(强调)  斜体
+         <cite>      cite(引用)        斜体
+         <sup>       superscripted(上标) 上标
+         <sub>       subscripted(下标)  下标
+     -->
+
+        网页特殊符号
+     <!--
+         只需要记忆一个 HTML空格 "&nbsp;",其他有需要的时候在查找特殊符号表
+     -->
+
+        自闭合标签
+     <!--
+         1,一般 标签
+         <body> </body>
+
+         2,自闭合标签
+         <br/> 、 <hr/>
+     -->
+
+        标签语言对照表
+       <!--
+        <div>	        division	            分割（块元素）
+        <span>	    span	                区域（行内元素）
+        <p>	        paragraph	            段落
+        <ol>	        ordered list	        有序列表
+        <ul>	        unordered list	        无序列表
+        <li>	        list item	            列表项
+        <dl>	        definition list	        定义列表
+        <dt>	        definition term	        定义术语
+        <dd>	        definition description	定义描述
+        <h1~h6>	    header1 ~header6	    标题1~标题6
+        <hr>	        horizontal rule	        水平线
+        <a>	        anchor	                锚点，超链接
+        <strong>	    strong	                强调（粗体）
+        <em>	        emphasized	            强调（斜体）
+        <sup>	    superscripted	        上标
+        <sub>	    subscripted	            下标
+        <br>	        break	                换行
+        <fieldset>	fieldset	            域集
+        <legend>  	legend	                图例
+        <caption>	caption	                （表格、图像等）标题
+        <thead>	    table head	            表头
+        <tbody>	    table body	            表身
+        <tfoot>	    table foot	            表脚
+        <th>	        table header	        表头单元格
+        <td>	        td	                    表身单元格
+       -->
+        
+
+       HTML3种列表
+       <!--列表有3种：有序列表、无序列表和定义列表-->
+       <!--
+           有序列表和无序列表都比较常用，而定义列表比较少用。在实际应用中，最常用的是无序列表
+       -->
+       <ol>
+            <li>有序列表项</li> 
+            <li>有序列表项</li> 
+            <li>有序列表项</li> 
+        </ol>
+        有序列表type 属性
+        <!--
+            1	数字1、2、3……
+            a	小写英文字母a、b、c……
+            A	大写英文字母A、B、C……
+            i	小写罗马数字i、ii、iii……
+            I	大写罗马数字I、II、III……
+
+            有序列表列表项符号由list-style-type属性定义，到时候应该摒弃type属性。
+        -->
+        无序列表
+        <!--
+           语法：
+            <ul  type="列表项符号">
+                <li>无序列表项</li>
+                <li>无序列表项</li>
+                <li>无序列表项</li>
+            </ul>
+        无序列表type属性
+            disc	默认值，实心圆“●”
+            circle	空心圆“○”
+            square	实心正方形“■”
+
+            无序列表列表项符号由list-style-type定义
+        -->
+
+</body>
+</html>
+
+
