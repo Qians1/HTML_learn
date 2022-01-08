@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>音视频标签</title>
 </head>
 <body>
 
@@ -32,8 +32,23 @@
     </audio>
     -->
 
-    <embed src="\Blibli_learn_html\source\路灰气球 - 从你的全世界路过.mp3" type=""  width="300" height="100">
+   <!-- <embed src="\Blibli_learn_html\source\路灰气球 - 从你的全世界路过.mp3" type=""  width="300" height="100">
+   -->
 
+
+        <!--
+            引入视频
+            使用video标签来向网页中引入一个视频文件
+                -使用方式和audio基本上一样
+        -->
+
+        <video controls>
+            <source src="\Blibli_learn_html\video\每天一遍，防止抑郁.mp4">
+            sorry, you browser doesn't support embeded videos. 
+            <!--
+                正常浏览器用source，不正常浏览器用embed ，就可以支持了
+            -->
+        </video>
 
 </body>
 </html>

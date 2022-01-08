@@ -1,0 +1,6 @@
+/* css外联框架，使用link标签引用 */
+
+p{
+    color: green;
+    font-size: 100px;
+}
