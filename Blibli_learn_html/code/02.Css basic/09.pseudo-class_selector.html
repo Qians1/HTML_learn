@@ -1,0 +1,80 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+
+    <style>
+
+        p{
+            font-size: 20px;
+        }
+        p::first-letter{
+            font-size: 50px;
+        }
+
+        p::first-line{
+            background-color: yellow;
+        }
+
+        p::selection{
+            background-color: aqua;
+        }
+
+      
+   
+        /* 
+            伪元素
+            不存在的元素
+                表示页面中一些的特殊的，并不真实存在的元素(特殊的位置)
+                伪元素使用::开头
+
+                ::first-letter 表示第一个字母
+                
+                ::first-line    表示第一行
+
+                ::selection 表示选中的内容
+
+                ::before  表示元素的起始位置
+                ::after     表示元素的最后
+                    --before and after
+                        使用的时候必须结合content 属性来使用
+                        content     表示内容
+
+                        before  表示元素的最开头
+                        after   表示元素的最结尾
+
+                        无法被选中，无法被复制（被conten过去的元素）
+        */
+
+/* 
+        div::before{
+                content: 'abc';
+                color: red;
+        }
+
+        div::after{
+            content: haha;
+            color: blue;
+        } */
+
+
+        
+    </style>
+</head>
+<body>
+
+    <!-- <q>Hello world</q> -->
+
+    <div>
+        Hello Hello How are you
+    </div>
+    
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci ea tenetur fuga, corrupti voluptas quidem odio, amet pariatur vitae sapiente explicabo accusantium praesentium unde cupiditate esse optio dignissimos totam.
+    </p>
+</body>
+</html>
