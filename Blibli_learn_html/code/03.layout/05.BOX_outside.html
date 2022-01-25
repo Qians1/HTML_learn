@@ -27,19 +27,31 @@
                             margin-top
                                 - 上外边距，设置一个正值，元素会向下移动
                             margin-right
+                                - 默认情况下，设置margin-right 不会产生任何效果
                             margin-bottom
+                                - 下外边距，设置一个正值，其下面的元素会向下移动
                             margin-left
                                 - 左外边，设置一个正值，元素会向右移动
+
+                            - 我们的margin也可以设置负值，如果设置负值，元素会向着相反的方向移动
 
                         - 元素在页面中是按照自左向右的顺序排列的
                             所以默认情况下，如果我们设置的是左和上外边距，则会移动元素自身
                             而设置其他，下和右外边，会移动其他元素
+
+                        - margin的简写属性
+                            - margin可以同时设置四个方向的外边距，用法和padding 一样
+                                上右下左
+
+                        - margin会影响到盒子实际占用的空间大小
                 */
                 
                 /* margin-left: 100px; 
                 margin-top: 100px; */
 
-                margin-bottom: 100px;
+                /* margin-bottom: 100px; */
+                /* margin-right: 0px; */
+                margin: 100px;
             }
 
             .box2{
